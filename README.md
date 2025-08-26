@@ -19,11 +19,10 @@ The artifact provides:
 
 ```
 ├── /microbenchmarks/     # Core vs. Uncore PMC validation (enclave vs. non-enclave)
-├── /uncore_tools/        # Tools for PMON configuration, PKT_MATCH setup
+├── /tools/               # Tools for PMON configuration, PKT_MATCH setup, etc
 ├── /reverse_engineer/    # Scripts for PKT_MATCH reverse engineering and M2M mapping
 ├── /attacks/libjpeg/     # Libjpeg case study (image recovery)
 ├── /attacks/rsa/         # RSA case study (key extraction under TLBlur)
-├── /kernel_module/       # Lightweight polling-based sampler (~650ns resolution)
 └── README.md             # This file
 ```
 
