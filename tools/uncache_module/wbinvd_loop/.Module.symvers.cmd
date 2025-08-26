@@ -1,0 +1,1 @@
+savedcmd_/home/user/PoC/tools/wbinvd_loop/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/user/PoC/tools/wbinvd_loop/Module.symvers -T /home/user/PoC/tools/wbinvd_loop/modules.order -i Module.symvers -e 

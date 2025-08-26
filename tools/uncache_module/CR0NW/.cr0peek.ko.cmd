@@ -1,0 +1,1 @@
+savedcmd_/home/user/PoC/tools/CR0NW/cr0peek.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/user/PoC/tools/CR0NW/cr0peek.ko /home/user/PoC/tools/CR0NW/cr0peek.o /home/user/PoC/tools/CR0NW/cr0peek.mod.o

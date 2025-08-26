@@ -1,0 +1,1 @@
+savedcmd_/home/user/PoC/tools/uc_page/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/user/PoC/tools/uc_page/Module.symvers -T /home/user/PoC/tools/uc_page/modules.order -i Module.symvers -e 

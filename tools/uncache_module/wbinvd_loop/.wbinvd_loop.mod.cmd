@@ -1,0 +1,1 @@
+savedcmd_/home/user/PoC/tools/wbinvd_loop/wbinvd_loop.mod := printf '%s\n'   wbinvd_loop.o | awk '!x[$$0]++ { print("/home/user/PoC/tools/wbinvd_loop/"$$0) }' > /home/user/PoC/tools/wbinvd_loop/wbinvd_loop.mod

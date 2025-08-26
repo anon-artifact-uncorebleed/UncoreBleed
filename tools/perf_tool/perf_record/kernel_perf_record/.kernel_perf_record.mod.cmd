@@ -1,0 +1,1 @@
+savedcmd_/home/user/PoC/tools/kernel_perf_record/kernel_perf_record.mod := printf '%s\n'   kernel_perf_record.o | awk '!x[$$0]++ { print("/home/user/PoC/tools/kernel_perf_record/"$$0) }' > /home/user/PoC/tools/kernel_perf_record/kernel_perf_record.mod

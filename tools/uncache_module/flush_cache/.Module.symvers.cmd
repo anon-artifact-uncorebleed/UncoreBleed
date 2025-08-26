@@ -1,0 +1,1 @@
+savedcmd_/home/user/PoC/tools/flush_cache/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/user/PoC/tools/flush_cache/Module.symvers -T /home/user/PoC/tools/flush_cache/modules.order -i Module.symvers -e 

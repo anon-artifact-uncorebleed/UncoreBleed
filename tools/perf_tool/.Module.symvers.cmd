@@ -1,0 +1,1 @@
+savedcmd_/home/user/PoC/tools/perf_tool/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/user/PoC/tools/perf_tool/Module.symvers -T /home/user/PoC/tools/perf_tool/modules.order -i Module.symvers -e 

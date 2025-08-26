@@ -1,0 +1,28 @@
+diff --git a/IDE/LINUX-SGX/build.sh b/IDE/LINUX-SGX/build.sh
+index c833b55c6..bafbbef43 100755
+--- a/IDE/LINUX-SGX/build.sh
++++ b/IDE/LINUX-SGX/build.sh
+@@ -5,5 +5,5 @@ CFLAGS_NEW="-DDEBUG_WOLFSSL"
+ export CFLAGS="${CFLAGS} ${CFLAGS_NEW}"
+ echo ${CFLAGS}
+ 
+-make -f sgx_t_static.mk HAVE_WOLFSSL_BENCHMARK=1 HAVE_WOLFSSL_TEST=1 HAVE_WOLFSSL_SP=1
++make -f sgx_t_static.mk SGX_DEBUG=1 HAVE_WOLFSSL_BENCHMARK=0 HAVE_WOLFSSL_TEST=0 HAVE_WOLFSSL_SP=1
+ 
+diff --git a/wolfssl/wolfcrypt/wc_port.h b/wolfssl/wolfcrypt/wc_port.h
+index a33fbf46f..de1ec8c8e 100644
+--- a/wolfssl/wolfcrypt/wc_port.h
++++ b/wolfssl/wolfcrypt/wc_port.h
+@@ -1520,9 +1520,9 @@ WOLFSSL_ABI WOLFSSL_API int wolfCrypt_Cleanup(void);
+ #ifndef WOLFSSL_NO_FENCE
+     #ifdef XFENCE
+         /* use user-supplied XFENCE definition. */
+-    #elif defined(__STDC_VERSION__) && (__STDC_VERSION__ >= 201112L)
+-        #include <stdatomic.h>
+-        #define XFENCE() atomic_thread_fence(memory_order_seq_cst)
++//    #elif defined(__STDC_VERSION__) && (__STDC_VERSION__ >= 201112L)
++//        #include <stdatomic.h>
++//        #define XFENCE() atomic_thread_fence(memory_order_seq_cst)
+     #elif defined(__GNUC__) && (__GNUC__ == 4) && \
+           defined(__GNUC_MINOR__) && (__GNUC_MINOR__ >= 1)
+         #define XFENCE() __sync_synchronize()

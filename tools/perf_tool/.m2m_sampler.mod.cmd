@@ -1,0 +1,1 @@
+savedcmd_/home/user/PoC/tools/perf_tool/m2m_sampler.mod := printf '%s\n'   m2m_sampler.o | awk '!x[$$0]++ { print("/home/user/PoC/tools/perf_tool/"$$0) }' > /home/user/PoC/tools/perf_tool/m2m_sampler.mod
