@@ -162,11 +162,11 @@ The script configures two PKT_MATCH events to monitor `square()` and `multiply()
 
 ## 6. Additional Tools
 
-- `/uncore_tools/pci_tool` — configure M2M PCICFG registers.
-- `/uncore_tools/ptw` — helper for virtual-to-physical translation.
-- `/uncore_tools/cpu_set` — lock CPU frequency to minimum.
-- `/kernel_module/uncache_module` — set CR0.CD=1 to enforce uncached mode.
-- `/kernel_module/perf_tool` — high-frequency polling sampler (~650 ns).
+- `/tools/pci_tool` — configure M2M PCICFG registers.
+- `/tools/ptw` — helper for virtual-to-physical translation.
+- `/tools/cpu_set` — lock CPU frequency to minimum.
+- `/tools/uncache_module` — set CR0.CD=1 to enforce uncached mode.
+- `/tools/perf_tool` — high-frequency polling sampler (~650 ns).
 
 ------
 
